@@ -1,15 +1,16 @@
 from django.http import HttpResponse
-from django.template.loader import get_template
-from django.template import Template, Context
 from django.shortcuts import render_to_response
 
 def hello(request):
     return HttpResponse("Hello world")
 
 def registro(request):
-    t = get_template('registro.html')
-    html = t.render(Context())
-    return HttpResponse(html)
+    return render_to_response('registro.html')
 
 def registrado(request):
-    return render_to_response('registrado.html', {'nombre': request.GET['nombre'], 'mail': request.GET['mail']})
+    r = request.GET
+    if not r.get('nombre') or not r.get('mail') or not r.get('pass'):
+        return render_to_response('registro.html',{'error':True})
+    else:
+        return render_to_response('registrado.html', 
+                    {'nombre': r['nombre'], 'mail': r['mail']})

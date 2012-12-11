@@ -4,5 +4,5 @@ from mysite.views import hello, registro, registrado
 urlpatterns = patterns('',
     ('^hello/$', hello),
     ('^registro/$', registro),
-    ('^registro/registrado/$', registrado),
+    ('^registrado/$', registrado),
 )

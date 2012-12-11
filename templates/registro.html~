@@ -2,7 +2,7 @@
 <head><title>registro</title></head>
 <body>
     <h1>Registrate</h1>
-    <form action="/registrado/" method="get">
+    <form action="" method="get">
         Nombre: <input type="text" name="nombre"><br>
         Mail: <input type="text" name="mail"><br>
         Contraseña: <input type="password" name="pass">
