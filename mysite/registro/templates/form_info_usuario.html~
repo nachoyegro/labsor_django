@@ -1,0 +1,10 @@
+<html>
+<head><title>Obtenga la informacion de un usuario</title></head>
+<body>
+    <h1>Usuario</h1>
+    <form action="/datos_usuario/" method="get">
+        Mail: <input type="text" name="mail"><br>
+        <input type="submit" value="Registrarme">
+    </form>
+</body>
+</html>

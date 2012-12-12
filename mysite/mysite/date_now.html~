@@ -1,0 +1,7 @@
+<html>
+<head> Mi Primer Pagina </head>
+
+<body>
+<h1> Este es mi parametro {{ param }}
+</body>
+</html>
